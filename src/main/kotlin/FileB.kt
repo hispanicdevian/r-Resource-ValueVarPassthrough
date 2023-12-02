@@ -41,7 +41,7 @@ fun fileB() {
                     modifier = Modifier.fillMaxWidth().clickable(onClick = { currentScreen = Navi.Main }),
                 ) {
                     Text(
-                        "Title Using fun FontSizeV1",
+                        "Title",
                         color = Color.White,
                         fontWeight = FontWeight.Bold,
                         style = TextStyle(fontSize = 20.sp),
