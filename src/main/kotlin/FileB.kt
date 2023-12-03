@@ -25,9 +25,9 @@ fun fileB() {
     var fontSized by remember { mutableStateOf(loadFontSizeV1A().sp) }
 
     val fontSizeMap = mapOf(
-        "Font A" to 25.sp,
+        "Font A" to 10.sp,
         "Font B" to 30.sp,
-        "Font C" to 35.sp
+        "Font C" to 50.sp
     )
     when (currentScreen) {
         is Navi.SettingFontScreen -> {

@@ -14,6 +14,11 @@ import androidx.compose.ui.unit.sp
 fun fileA() {
     var currentScreen by remember { mutableStateOf<Navi>(Navi.Main) }
 
+    /* Instead of trying to pass through the value of a var/val,
+    in this scenario I can just call my "File Loading" function,
+    and read the selected font that is saved in the text file */
+    val fontSized by remember { mutableStateOf(loadFontSizeV1A().sp) }
+
     when (currentScreen) {
         is Navi.Main -> {
             Column(
@@ -39,7 +44,7 @@ fun fileA() {
                         Text(
                             text = "Title",
                             color = Color.White,
-                            fontSize = 30.sp
+                            fontSize = fontSized
                         )
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(
