@@ -1,5 +1,5 @@
 
 sealed class Navi {
     data object Main : Navi()
-    data object SettingFontSize : Navi()
+    data object SettingFontScreen : Navi()
 }

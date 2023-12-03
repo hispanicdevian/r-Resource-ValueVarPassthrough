@@ -25,7 +25,7 @@ fun fileA() {
                         .background(color = Color.Black, shape = AbsoluteRoundedCornerShape(8.dp))
                         .padding(5.dp)
                         .fillMaxSize()
-                        .clickable (onClick = { currentScreen = Navi.SettingFontSize })
+                        .clickable (onClick = { currentScreen = Navi.SettingFontScreen })
                         .background(
                             (Color.DarkGray),
                             shape = AbsoluteRoundedCornerShape(5.dp)
@@ -52,6 +52,6 @@ fun fileA() {
                 Spacer(modifier = Modifier.height(12.dp))
             }
         }
-        Navi.SettingFontSize -> fileB()
+        Navi.SettingFontScreen -> fileB()
     }
 }

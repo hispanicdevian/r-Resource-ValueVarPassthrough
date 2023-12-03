@@ -20,7 +20,7 @@ import java.io.File
 
 @Composable
 fun fileB() {
-    var currentScreen by remember { mutableStateOf<Navi>(Navi.SettingFontSize) }
+    var currentScreen by remember { mutableStateOf<Navi>(Navi.SettingFontScreen) }
 
     var fontSized by remember { mutableStateOf(loadFontSizeV1A().sp) }
 
@@ -30,7 +30,7 @@ fun fileB() {
         "Font C" to 35.sp
     )
     when (currentScreen) {
-        is Navi.SettingFontSize -> {
+        is Navi.SettingFontScreen -> {
 
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
